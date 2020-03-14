@@ -34,4 +34,9 @@ Route::get('/tasks', 'TaskCOntroller@index')->middleware('nombre en "kernel.php"
 //Este es el método para guardar los datos del formulario
 Route::post('/tasks', 'TaskController@store')->name('tasks.store');
 
-Route::delete('/tasks/{id}', 'TaskController@destroy');
+Route::get('/tasks/edit/{id}', 'TaskController@editView')->name('tasks.edit_view');
+Route::post('/tasks/{id}', 'TaskController@edit')->name('tasks.edit');
+
+Route::delete('/tasks/{id}', 'TaskController@destroy')->name('tasks.destroy');
+
+
