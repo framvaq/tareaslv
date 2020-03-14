@@ -26,7 +26,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/tasks', 'TaskController@index');
+Route::get('/tasks', 'TaskController@index')->name('tasks');
 /*
 Se le puede aplicar un middleware a un método concreto así:
 Route::get('/tasks', 'TaskCOntroller@index')->middleware('nombre en "kernel.php"');

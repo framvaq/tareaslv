@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Bienvenido hacker
+                    Bienvenido! Haz click <a href="{{ route('tasks') }}">aquí</a> para ir a tus tareas.
                 </div>
             </div>
         </div>
